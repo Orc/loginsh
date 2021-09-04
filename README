@@ -1,0 +1,8 @@
+A little utility to exec $SHELL as a login shell (for kde's konsole program,
+which bizarrely doesn't have a way to exec an arbitrary shell as a login
+shell?
+
+To install (as root):
+
+    cc -o /sbin/loginsh main.c
+    chmod go-w /sbin/loginsh
