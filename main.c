@@ -20,7 +20,7 @@ mybasename(char *path)
 {
     char *slash = strrchr(path, '/');
 
-    return slash ? slash : path;
+    return slash ? (1+slash) : path;
 }
 
 
